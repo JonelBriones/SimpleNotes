@@ -1,0 +1,26 @@
+.toDoForm {
+  display: flex;
+  width: 100%;
+  margin-block: 10px;
+
+  gap: 20px;
+}
+.toDoForm form {
+  flex: 2;
+}
+.toDoForm p {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb8500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.toDoForm input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}

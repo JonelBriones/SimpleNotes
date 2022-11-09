@@ -1,0 +1,13 @@
+.navbar {
+  border: 2px solid black;
+  width: 90%;
+  margin: auto;
+  padding: 32px;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navlink {
+  cursor: pointer;
+}
