@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './toDoForm.styles.css'
-const ToDoForm = () => {
+const ToDoForm = (props) => {
+  const {
+    onSubmitHandler,
+    onChangeHandler,
+    addToDo,
+    buttonSuccess,
+    buttonError,
+  } = props
   return (
     <div className="toDoForm">
-      <form>
-        <input type="text" placeholder="To-do" />
+      <form onSubmit={onSubmitHandler}>
+        <input
+          type="text"
+          placeholder="To-do"
+          name="name"
+          value={addToDo.name}
+          onChange={onChangeHandler}
+          className={buttonError ? 'btn-add-wiggle' : ''}
+        />
+        <button type="submit" className={buttonSuccess ? 'btn-add-wiggle' : ''}>
+          Add
+        </button>
       </form>
-      <p>Add</p>
     </div>
   )
 }

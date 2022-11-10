@@ -1,26 +1,49 @@
 .toDoForm {
-  display: flex;
   width: 100%;
-  margin-block: 10px;
-
-  gap: 20px;
 }
 .toDoForm form {
-  flex: 2;
-}
-.toDoForm p {
   display: flex;
-  flex: 1;
+  gap: 10px;
+}
+.toDoForm form input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.toDoForm form button {
+  width: 20%;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fb8500;
   border-radius: 10px;
   cursor: pointer;
 }
-.toDoForm input {
-  padding: 10px;
-  width: 100%;
-  border-radius: 10px;
-  outline: none;
-  border: none;
+.btn-add-wiggle {
+  animation: rotate 0.7s ease-in-out both;
+}
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  20%,
+  60% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  40%,
+  80% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

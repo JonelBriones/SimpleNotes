@@ -2,6 +2,19 @@
   margin: auto;
   max-width: 500px;
   color: white;
+  background-color: #353535;
+  padding: 40px 20px;
+  border-radius: 10px;
+  height: 800px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 2px rgb(53, 53, 53);
+}
+.toDo-name-container {
+  display: flex;
+  gap: 10px;
+}
+.toDo-name-container.cursor {
+  cursor: pointer;
 }
 h1 {
   text-align: center;
@@ -17,15 +30,25 @@ h1 {
   display: flex;
 }
 .toDo > * {
-  flex: 1;
   margin: 4px;
+}
+.toDo div:nth-child(1) {
+  width: 90%;
+}
+.toDo div:nth-child(2) {
+  width: 10%;
+}
+.toDo-name {
+  all: unset;
 }
 
 .actions {
-  display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
-}
-.actions > * {
   cursor: pointer;
+}
+.actions-container {
+  display: flex;
+  justify-content: center;
+}
+button {
+  all: unset;
 }
