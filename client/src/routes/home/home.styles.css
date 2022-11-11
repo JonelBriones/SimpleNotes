@@ -1,6 +1,6 @@
 .toDo-container {
   margin: auto;
-  max-width: 500px;
+  width: 500px;
   color: white;
   background-color: #353535;
   padding: 40px 20px;
@@ -12,6 +12,7 @@
 .toDo-name-container {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .toDo-name-container.cursor {
   cursor: pointer;
@@ -20,6 +21,7 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .toDo {
   padding: 5px;
   /* gap: 10px; */
@@ -45,9 +47,13 @@ h1 {
 .actions {
   cursor: pointer;
 }
+.actions.delete:hover {
+  transform: rotate(9deg);
+}
 .actions-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 button {
   all: unset;

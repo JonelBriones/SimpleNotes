@@ -83,6 +83,7 @@ const Home = () => {
     <>
       <div className="toDo-container">
         <h1>Todo-List</h1>
+
         <ToDoForm
           onSubmitHandler={onAddToDo}
           onChangeHandler={onChangeAddToDoHandler}
@@ -124,7 +125,7 @@ const Home = () => {
             )}
             <div className="actions-container">
               <BiTrash
-                className="actions"
+                className="actions delete"
                 onClick={() => deleteToDo(toDo.id)}
               />
             </div>
